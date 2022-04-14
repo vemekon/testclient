@@ -6,7 +6,7 @@ function App() {
   const [user, setUser] = useState();
 
   const get = async () => {
-    const res = await axios.get(`http://localhost:5000/sam`);
+    const res = await axios.get(`https://testserverone.herokuapp.com/`);
     setUser(res.data);
     console.log(res.data);
   };
